@@ -18,4 +18,9 @@
   &__list {
     display: flex;
   }
+
+  &__links {
+    color: $nav-font-color;
+    font-size: $nav-font-size;
+  }
 }

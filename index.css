@@ -1,3 +1,83 @@
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-BoldIt.woff2") format("woff2"), url("fonts/MinionPro-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-Medium.woff2") format("woff2"), url("fonts/MinionPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-It.woff2") format("woff2"), url("fonts/MinionPro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-Regular.woff2") format("woff2"), url("fonts/MinionPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-BoldCn.woff2") format("woff2"), url("fonts/MinionPro-BoldCn.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-BoldCnIt.woff2") format("woff2"), url("fonts/MinionPro-BoldCnIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-Semibold.woff2") format("woff2"), url("fonts/MinionPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-Bold.woff2") format("woff2"), url("fonts/MinionPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-SemiboldIt.woff2") format("woff2"), url("fonts/MinionPro-SemiboldIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("fonts/MinionPro-MediumIt.woff2") format("woff2"), url("fonts/MinionPro-MediumIt.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,6 +137,11 @@ table {
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+  font-family: "Minion Pro";
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -98,13 +183,18 @@ a {
   display: flex;
 }
 
+.navbar__links {
+  color: #008e9b;
+  font-size: 24px;
+}
+
 .section {
   width: 100%;
   height: 100vh;
 }
 
 .section__header {
-  background-image: url("../assets/header_bg.svg");
+  background-image: url("../assets/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
