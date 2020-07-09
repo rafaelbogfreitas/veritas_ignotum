@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+}
+
 a {
   color: inherit;
   text-decoration: none;
