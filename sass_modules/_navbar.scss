@@ -2,12 +2,13 @@
   position: fixed;
   top: 0;
   left:0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
   height: 90px;
-  padding: 10px;
+  padding: 10px 30px;
   background-color: #fff;
   box-shadow: 0 3px 0 3px rgba(0, 0, 0, 0.303);
 
@@ -17,6 +18,22 @@
 
   &__list {
     display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 100%;
+  }
+  
+  &__list-items {
+    width: auto;
+    margin-right: 40px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 20px;
+    transition: border 0.3s linear;
+    
+    &:hover {
+      border-bottom: 1px solid $nav-font-color;
+      transition: border 0.3s linear;
+    }
   }
 
   &__links {

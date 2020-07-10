@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: 'Minion Pro';
   src: url("fonts/MinionPro-BoldIt.woff2") format("woff2"), url("fonts/MinionPro-BoldIt.woff") format("woff");
@@ -78,60 +132,6 @@
   font-display: swap;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -156,6 +156,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +168,7 @@ a {
           justify-content: space-between;
   width: 100vw;
   height: 90px;
-  padding: 10px;
+  padding: 10px 30px;
   background-color: #fff;
   -webkit-box-shadow: 0 3px 0 3px rgba(0, 0, 0, 0.303);
           box-shadow: 0 3px 0 3px rgba(0, 0, 0, 0.303);
@@ -183,19 +184,126 @@ a {
   display: flex;
 }
 
+.navbar__list-items {
+  width: auto;
+  margin-right: 40px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 20px;
+  -webkit-transition: border 0.3s linear;
+  transition: border 0.3s linear;
+}
+
+.navbar__list-items:hover {
+  border-bottom: 1px solid #008e9b;
+  -webkit-transition: border 0.3s linear;
+  transition: border 0.3s linear;
+}
+
 .navbar__links {
   color: #008e9b;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .section {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 .section__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url("../assets/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section__header-image {
+  width: 90%;
+  height: auto;
+}
+
+.section__header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.section__header-subtitle {
+  width: 80%;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section__science {
+  position: relative;
+  background-image: url("/assets/science_bg.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position-x: 100%;
+}
+
+.section .info {
+  position: absolute;
+  top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.section .info__cards {
+  position: relative;
+  width: 30%;
+  height: 370px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #008e9b;
+  border-left: 10px solid #008e9b;
+  border-top: 10px solid #008e9b;
+}
+
+.section .info__text {
+  width: 80%;
+  margin: 20px auto;
+  color: #008e9b;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.section .info__decor {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(45deg) translateX(80%);
+          transform: rotate(45deg) translateX(80%);
+  background-color: #008e9b;
 }
 /*# sourceMappingURL=index.css.map */
