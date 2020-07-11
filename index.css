@@ -147,9 +147,41 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .main {
   width: 100vw;
   height: auto;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: bold;
+  margin-left: 3%;
+  margin-bottom: 5%;
+}
+
+.title--science {
+  color: #7ac5cf;
+  text-shadow: -3px -3px 0 #004947;
+}
+
+.subtitle {
+  color: #004947;
+  font-size: 3rem;
+  margin-left: 3%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text {
+  text-align: justify;
+  font-size: 2.5rem;
+  line-height: 40px;
+  margin: 3%;
+  color: #006d69;
 }
 
 .navbar {
@@ -188,7 +220,6 @@ a {
   width: auto;
   margin-right: 40px;
   border-bottom: 1px solid transparent;
-  padding-bottom: 20px;
   -webkit-transition: border 0.3s linear;
   transition: border 0.3s linear;
 }
@@ -246,11 +277,11 @@ a {
 }
 
 .section__header-subtitle {
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
   color: #fff;
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 4.6rem;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -263,6 +294,7 @@ a {
   background-repeat: no-repeat;
   background-size: 40%;
   background-position-x: 100%;
+  padding-top: 35%;
 }
 
 .section .info {
@@ -276,34 +308,8 @@ a {
   width: 100%;
 }
 
-.section .info__cards {
-  position: relative;
-  width: 30%;
-  height: 370px;
-  overflow: hidden;
-  background-color: #fff;
-  border: 1px solid #008e9b;
-  border-left: 10px solid #008e9b;
-  border-top: 10px solid #008e9b;
-}
-
-.section .info__text {
-  width: 80%;
-  margin: 20px auto;
-  color: #008e9b;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  text-align: center;
-}
-
-.section .info__decor {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(45deg) translateX(80%);
-          transform: rotate(45deg) translateX(80%);
-  background-color: #008e9b;
+.section .info__card-img {
+  width: 28%;
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */
