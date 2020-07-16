@@ -6,6 +6,26 @@
     background-size: 40%;
     background-position-x: 100%;
     padding-top: 35%;
+
+    &--single {
+      padding-top: 50px;
+      background-position-y: -300px;
+    }
+
+    &-container {
+      width: 100%;
+      padding: 0 3%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-item {
+      width: 15%;
+    }
+  
+    &-img {
+      width: 100%;
+    }
   }
 
   .info {
@@ -49,6 +69,32 @@
     &__card-img {
       width: 28%;
       height: auto;
+    }
+
+  }
+
+  .science {
+    &__btn {
+      margin: 0 auto;
+      border: none;
+      background-color: #006560;
+
+      & > a {
+        color: white;
+      }
+    }
+
+    &__name {
+      color: #005d57;
+      font-size: 2rem;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    &__description {
+      color: #005d57;
+      font-size: 1.5rem;
+      text-align: center;
     }
   }
 }

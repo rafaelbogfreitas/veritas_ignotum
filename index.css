@@ -297,6 +297,29 @@ strong {
   padding-top: 35%;
 }
 
+.section__science--single {
+  padding-top: 50px;
+  background-position-y: -300px;
+}
+
+.section__science-container {
+  width: 100%;
+  padding: 0 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section__science-item {
+  width: 15%;
+}
+
+.section__science-img {
+  width: 100%;
+}
+
 .section .info {
   position: absolute;
   top: -100px;
@@ -311,5 +334,28 @@ strong {
 .section .info__card-img {
   width: 28%;
   height: auto;
+}
+
+.section .science__btn {
+  margin: 0 auto;
+  border: none;
+  background-color: #006560;
+}
+
+.section .science__btn > a {
+  color: white;
+}
+
+.section .science__name {
+  color: #005d57;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section .science__description {
+  color: #005d57;
+  font-size: 1.5rem;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
