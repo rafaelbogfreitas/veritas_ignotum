@@ -1,0 +1,38 @@
+.section {
+  &__services{
+    background:url("/assets/bg_triangles.svg")  no-repeat right top, radial-gradient(#92C3CD, #004A48);
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+  }
+
+}
+.services {
+  &__container {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 30%;
+  }
+
+  &__icon-container {
+    
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    &> img:nth-child(2){
+      position: absolute;
+      bottom:0;
+      left:47.5%;
+    }
+  }
+}

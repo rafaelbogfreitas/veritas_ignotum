@@ -1,0 +1,23 @@
+.section {
+  &__about{
+    background:url("/assets/bg_triangles.svg")  no-repeat right top;
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+  }
+}
+
+.about {
+
+  &__container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & > img {
+      width: 40%;
+    }
+  }
+}
