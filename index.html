@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-  <title>Veritas Ignotum</title>
+  <title>Veritas Ignotum | Home</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
       <img src="./assets/navbar_logo.svg" alt="vi logo" class="navbar__image">
       <ul class="navbar__list">
         <li class="navbar__list-items"><a href="#" class="navbar__links">HOME</a></li>
-        <li class="navbar__list-items"><a href="#" class="navbar__links">SCIENCE</a></li>
+        <li class="navbar__list-items"><a href="#science" class="navbar__links">SCIENCE</a></li>
         <li class="navbar__list-items"><a href="#" class="navbar__links">SERVICE</a></li>
         <li class="navbar__list-items"><a href="#" class="navbar__links">ABOUT US</a></li>
         <li class="navbar__list-items"><a href="#" class="navbar__links">CONTACT</a></li>
@@ -34,7 +34,7 @@
         <img class="info__card-img" src="./assets/card_2.svg" alt="vi vision">
         <img class="info__card-img" src="./assets/card_3.svg" alt="vi vision">
       </aside>
-    <h1 class="title title--science">SCIENCE</h1>
+    <h1 id="science" class="title title--dark">SCIENCE</h1>
     <h2 class="subtitle">Behavior analysis fundamentals</h2>
     <article>
       <p class="text">
@@ -72,7 +72,12 @@
           <p class="science__description">(visible changes to the boy such as breath rate, sweating)</p>
         </div>
       </div>
-      <button class="science__btn"><a href="science.html">LEARN MORE</a></button>
+      <div class="btn__container">
+        <button><a class="btn btn--dark" href="science.html">LEARN MORE</a></button>
+      </div>
+      <div class="btn__container">
+        <button><a class="btn btn--light" href="services.html">LEARN MORE</a></button>
+      </div>
     </article>
     </section>
   </main>

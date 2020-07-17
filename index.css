@@ -151,9 +151,20 @@ strong {
   font-weight: bold;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 .main {
   width: 100vw;
   height: auto;
+}
+
+.section {
+  padding: 20px;
 }
 
 .title {
@@ -163,9 +174,14 @@ strong {
   margin-bottom: 5%;
 }
 
-.title--science {
+.title--dark {
   color: #7ac5cf;
   text-shadow: -3px -3px 0 #004947;
+}
+
+.title--light {
+  color: #fff;
+  text-shadow: -3px -3px 0 #013230;
 }
 
 .subtitle {
@@ -182,6 +198,59 @@ strong {
   line-height: 40px;
   margin: 3%;
   color: #006d69;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 10px 20px;
+  -webkit-box-shadow: -4px -4px 0 1px rgba(0, 0, 0, 0.276);
+          box-shadow: -4px -4px 0 1px rgba(0, 0, 0, 0.276);
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-filter 0.2s linear;
+  transition: -webkit-transform 0.2s linear, -webkit-filter 0.2s linear;
+  transition: transform 0.2s linear, filter 0.2s linear;
+  transition: transform 0.2s linear, filter 0.2s linear, -webkit-transform 0.2s linear, -webkit-filter 0.2s linear;
+}
+
+.btn--dark {
+  color: #fff;
+  background-color: #008e9b;
+}
+
+.btn--light {
+  color: #008e9b;
+  background-color: #fff;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-filter 0.2s linear;
+  transition: -webkit-transform 0.2s linear, -webkit-filter 0.2s linear;
+  transition: transform 0.2s linear, filter 0.2s linear;
+  transition: transform 0.2s linear, filter 0.2s linear, -webkit-transform 0.2s linear, -webkit-filter 0.2s linear;
+}
+
+.btn__container {
+  width: 100%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn > a {
+  padding: 20px 30px;
 }
 
 .navbar {
