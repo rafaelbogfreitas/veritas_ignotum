@@ -16,9 +16,9 @@
       <ul class="navbar__list">
         <li class="navbar__list-items"><a href="#" class="navbar__links">HOME</a></li>
         <li class="navbar__list-items"><a href="#science" class="navbar__links">SCIENCE</a></li>
-        <li class="navbar__list-items"><a href="#" class="navbar__links">SERVICE</a></li>
-        <li class="navbar__list-items"><a href="#" class="navbar__links">ABOUT US</a></li>
-        <li class="navbar__list-items"><a href="#" class="navbar__links">CONTACT</a></li>
+        <li class="navbar__list-items"><a href="#services" class="navbar__links">SERVICE</a></li>
+        <li class="navbar__list-items"><a href="#about" class="navbar__links">ABOUT US</a></li>
+        <li class="navbar__list-items"><a href="#contact" class="navbar__links">CONTACT</a></li>
       </ul>
     </nav>
     <section class="section section__header">
@@ -92,7 +92,7 @@
       </article>
     </section>
 
-    <section class="section__services">
+    <section id="services" class="section__services">
       <h1 id="science" class="title title--light">SERVICES</h1>
       <div class="services__container">
         <img src="./assets/deception_card.png" alt="Deception detection image" class="services__img">
@@ -104,19 +104,37 @@
       </div>
     </section>
 
-    <section class="section section__about">
+    <section id="about" class="section section__about">
       <h1 id="science" class="title title--dark">ABOUT US</h1>
       <div class="about__container">
         <img src="/assets/mb_info.svg" alt="Matthew CV" class="about__img">
         <img src="/assets/ma_info.svg" alt="Maria CV" class="about__img">
       </div>
+      <h2 class="subtitle">ETHICS</h2>
+      <p class="text">
+        Veritas Ignotum employs an adamantine ethical & moral code throughout the delivery of our business.  The causality of these codes, ensure we will efficiently deliver a reputable and professional service to current, reoccurring and potential clientele.  There will be no tolerance to any business that would cause jeopardy of these practices, to that end; consorts will not be offered to those of a political standing, nor in any sort of matrimonial disputes.
+      </p>
     </section>
     
-    <section class="section section__contact">
-      <h1 id="science" class="title title--dark">ABOUT US</h1>
-      <div class="contact__form" netlify>
-     
-      </div>
+    <section id="contact" class="section section__contact">
+      <aside class="info">
+        <img class="value__cards" src="/assets/respect_card.svg" alt="respect card">
+        <img class="value__cards" src="./assets/intelligence_card.svg" alt="intelligence card">
+        <img class="value__cards" src="/assets/discipline_card.svg" alt="discipline card">
+        <img class="value__cards" src="/assets/intelligence_card.svg" alt="integrity card">
+      </aside>
+      <h1 id="science" class="title title--light">CONTACT</h1>
+      <h2 class="subtitle text--light">GET IN TOUCH WITH VERITAS IGNOTUM</h2>
+      <p class="text text--light">You can send a message from the form bellow</p>
+      <form class="contact__form" netlify>
+        <input placeholder="Name*" type="text" class="input">
+        <input placeholder="Email*" type="email" class="input">
+        <input placeholder="Number*" type="text" class="input">
+        <textarea placeholder="Message" name="message"></textarea>
+        <div class="btn__container">
+          <button class="btn btn--light" type="submit">SEND MESSAGE</button>
+        </div>
+      </form>
     </section>
   </main>
   <script src="./script.js"></script>

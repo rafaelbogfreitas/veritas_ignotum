@@ -1,0 +1,12 @@
+.section {
+  &__contact{
+    position: relative ;
+    background:url("/assets/bg_triangles.svg")  no-repeat right top, radial-gradient(#92C3CD, #004A48);
+    width: 100vw;
+    padding-top: 20%;
+  }
+}
+
+.value__cards {
+  width: 20%;
+}

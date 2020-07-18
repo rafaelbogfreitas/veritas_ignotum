@@ -15,6 +15,8 @@ a {
 strong {
   font-weight: bold;
 }
+
+
 button {
   margin: 0;
   padding: 0;
@@ -29,6 +31,43 @@ button {
 
 .section {
   padding: 20px;
+}
+
+.input, textarea {
+  width: 95%;
+  height: 40px;
+  margin-top: 20px;
+  background-color:#fff;
+  border: 1px solid #0A5D58;
+  padding: 0 20px;
+  font-size: 2rem;
+  font-family: $main-font-family;
+  color: #0A5D58;
+  &::placeholder {
+    font-family: $main-font-family;
+    color: #0A5D58;
+  }
+  transition: box-shadow 2s linear;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.283);
+    transition: box-shadow 0.4s linear;
+  }
+}
+
+textarea {
+  height: 200px;
+  padding-top:10px;;
+}
+
+
+
+.contact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -62,6 +101,10 @@ button {
   line-height: 40px;
   margin: 3%;
   color:#006d69;
+
+  &--light {
+    color: #fff;
+  }
 }
 
 .btn {
