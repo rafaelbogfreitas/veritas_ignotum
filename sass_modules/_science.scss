@@ -96,5 +96,19 @@
       font-size: 1.5rem;
       text-align: center;
     }
+
+    &__list {
+      list-style: inside;
+
+      &-item {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      &-head {
+        text-decoration: underline;
+      }
+    }
+
   }
 }

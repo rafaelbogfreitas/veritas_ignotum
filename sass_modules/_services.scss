@@ -1,7 +1,9 @@
 .section {
   &__services{
-    background:url("/assets/bg_triangles.svg") no-repeat right top, radial-gradient(#92C3CD, #004A48);
-    // background-size: 400px;
+    background:url("/assets/bg_triangles.svg"), radial-gradient(#92C3CD, #004A48);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%, cover;
+    background-position: 100% -15%, center;
     width: 100vw;
     height: auto;
     padding-top: 50px;
@@ -46,15 +48,18 @@
     display:flow-root;
 
     & > p:nth-child(7){
-      border-bottom: 2px solid #004A48;
-      margin-bottom: 50px;
+      border-bottom: 2px solid #779598;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
   }
 
   &__reference {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    color: #779598;
     &:last-of-type {
       margin-bottom: 20px;
     }

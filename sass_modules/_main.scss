@@ -16,12 +16,17 @@ strong {
   font-weight: bold;
 }
 
+em {
+  font-style: italic;
+}
+
 
 button {
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .main {
