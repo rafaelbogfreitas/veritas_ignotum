@@ -27,11 +27,12 @@
     width: auto;
     margin-right: 40px;
     border-bottom: 1px solid transparent;
-    transition: border 0.3s linear;
+    transition: border 0.3s linear, color 0.3s linear;
     
     &:hover {
       border-bottom: 1px solid $nav-font-color;
-      transition: border 0.3s linear;
+      transition: border 0.3s linear, color 0.3s linear;
+      color: #005d57;
     }
   }
 

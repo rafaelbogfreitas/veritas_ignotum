@@ -358,14 +358,15 @@ textarea {
   width: auto;
   margin-right: 40px;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border 0.3s linear;
-  transition: border 0.3s linear;
+  -webkit-transition: border 0.3s linear, color 0.3s linear;
+  transition: border 0.3s linear, color 0.3s linear;
 }
 
 .navbar__list-items:hover {
   border-bottom: 1px solid #008e9b;
-  -webkit-transition: border 0.3s linear;
-  transition: border 0.3s linear;
+  -webkit-transition: border 0.3s linear, color 0.3s linear;
+  transition: border 0.3s linear, color 0.3s linear;
+  color: #005d57;
 }
 
 .navbar__links {
@@ -542,6 +543,37 @@ textarea {
   position: absolute;
   bottom: 0;
   left: 47.5%;
+}
+
+.services__content {
+  width: 90%;
+  margin: 20px auto;
+  -webkit-box-shadow: -5px -5px 0 3px #004A48;
+          box-shadow: -5px -5px 0 3px #004A48;
+  padding-top: 3%;
+  background-color: #fff;
+  display: flow-root;
+}
+
+.services__content > p:nth-child(7) {
+  border-bottom: 2px solid #004A48;
+  margin-bottom: 50px;
+}
+
+.services__reference {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.services__reference:last-of-type {
+  margin-bottom: 20px;
+}
+
+.services__img-main {
+  float: right;
+  width: 40%;
+  margin: 3%;
 }
 
 .section__about {
