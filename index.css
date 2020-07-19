@@ -368,15 +368,18 @@ textarea {
 }
 
 .navbar__list-items:hover {
-  border-bottom: 1px solid #008e9b;
+  border-bottom: 1px solid #005d57;
   -webkit-transition: border 0.3s linear, color 0.3s linear;
   transition: border 0.3s linear, color 0.3s linear;
-  color: #005d57;
 }
 
 .navbar__links {
   color: #008e9b;
   font-size: 2.4rem;
+}
+
+.navbar__links:hover {
+  color: #005d57;
 }
 
 .section {
@@ -462,6 +465,12 @@ textarea {
 
 .section__science-img {
   width: 100%;
+}
+
+.section__science-content > p:last-of-type {
+  border-bottom: 2px solid #779598;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .section .info {

@@ -26,6 +26,12 @@
     &-img {
       width: 100%;
     }
+
+    &-content > p:last-of-type{
+      border-bottom: 2px solid #779598;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   .info {
@@ -70,7 +76,7 @@
       width: 28%;
       height: auto;
     }
-
+  
   }
 
   .science {

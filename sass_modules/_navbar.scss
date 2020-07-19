@@ -30,14 +30,17 @@
     transition: border 0.3s linear, color 0.3s linear;
     
     &:hover {
-      border-bottom: 1px solid $nav-font-color;
+      border-bottom: 1px solid #005d57;;
       transition: border 0.3s linear, color 0.3s linear;
-      color: #005d57;
     }
   }
-
+  
   &__links {
     color: $nav-font-color;
     font-size: $nav-font-size;
+    
+    &:hover {
+      color: #005d57;
+    }
   }
 }
