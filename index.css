@@ -654,6 +654,21 @@ textarea {
   width: 40%;
 }
 
+@media screen and (max-width: 600px) {
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__container > img {
+    width: 90%;
+  }
+  .about__container > img:nth-child(2) {
+    margin-top: 50px;
+  }
+}
+
 .section__contact {
   position: relative;
   background: url("/assets/bg_triangles.svg") no-repeat right top, radial-gradient(#92C3CD, #004A48);
