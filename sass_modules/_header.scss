@@ -9,6 +9,9 @@
     background-size: cover;
     justify-content: flex-end;
 
+    @media screen and (max-width: 1000px){
+    }
+
     &-image {
       width: 90%;
       height: auto;

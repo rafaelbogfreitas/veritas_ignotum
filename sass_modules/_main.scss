@@ -5,6 +5,10 @@
 html {
   font-size: $main-font-size;
   font-family: $main-font-family;
+  
+  @media screen and (max-width: 1000px){
+    font-size: $main-font-size / 1.3;
+  }
 }
 
 a {
