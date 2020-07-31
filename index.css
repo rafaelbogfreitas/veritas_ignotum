@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -229,6 +229,11 @@ textarea {
   padding-top: 10px;
 }
 
+.ul--terms {
+  list-style: inside upper-roman;
+  font-style: italic;
+}
+
 .contact__form {
   width: 100%;
   display: -webkit-box;
@@ -278,6 +283,15 @@ textarea {
 
 .text--light {
   color: #fff;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--url {
+  text-decoration: underline;
+  margin-bottom: 0;
 }
 
 .btn {
@@ -546,7 +560,7 @@ textarea {
 }
 
 .section__services {
-  background: url("/assets/bg_triangles.svg"), radial-gradient(#92C3CD, #004A48);
+  background: url("/assets/bg_triangles.svg"), radial-gradient(#92C3CD, #008e9b);
   background-repeat: no-repeat, no-repeat;
   background-size: 40%, cover;
   background-position: 100% -15%, center;
@@ -671,12 +685,24 @@ textarea {
 
 .section__contact {
   position: relative;
-  background: url("/assets/bg_triangles.svg") no-repeat right top, radial-gradient(#92C3CD, #004A48);
+  background: url("/assets/bg_triangles.svg") no-repeat right top, radial-gradient(#92C3CD, #008e9b);
   width: 100vw;
   padding-top: 20%;
 }
 
 .value__cards {
   width: 20%;
+}
+
+.section__terms {
+  padding-top: 20px;
+  background-position-y: -300px;
+  background-position-x: 120%;
+}
+
+@media screen and (max-width: 900px) {
+  .section__terms {
+    background-position-y: -100px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

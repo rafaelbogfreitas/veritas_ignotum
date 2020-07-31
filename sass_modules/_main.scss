@@ -70,6 +70,11 @@ textarea {
   padding-top:10px;;
 }
 
+.ul--terms {
+  list-style: inside upper-roman;
+  font-style: italic;
+}
+
 
 
 .contact__form {
@@ -113,6 +118,15 @@ textarea {
 
   &--light {
     color: #fff;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--url {
+    text-decoration: underline;
+    margin-bottom: 0;
   }
 }
 

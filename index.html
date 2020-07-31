@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
   <!-- Primary Meta Tags -->
   <title>Veritas Ignotum | Home</title>
   <meta name="title" content="Veritas Ignotum | Home">
@@ -40,7 +45,7 @@
     </nav>
     <section class="section section__header">
       <aside class="section__header-container">
-        <img class="section__header-image" src="./assets/logo_header.png" alt="veritas logo">
+        <img class="section__header-image animated fadeIn" src="./assets/logo_header.png" alt="veritas logo">
         <h2 class="section__header-subtitle">At <strong>Veritas Ignotum (VI)</strong>, our goal is to effectively
           <strong>establish</strong> and <strong>identify</strong> any <strong>“Unknown Truths”</strong> in
           communication, assisting towards efficient
@@ -148,8 +153,9 @@
         <input name="email" placeholder="Email*" type="email" class="input" />
         <input name="number" placeholder="Number*" type="text" class="input" />
         <textarea placeholder="Message" name="message"></textarea>
+        <a href="/terms&conditions.html" class="text text--url text--light">Terms & Conditions and GDPR Policy</a>
         <div class="btn__container">
-          <button class="btn btn--light" type="submit">SEND MESSAGE</button>
+          <button class="btn btn--dark" type="submit">SEND MESSAGE</button>
         </div>
       </form>
     </section>

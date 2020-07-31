@@ -1,0 +1,12 @@
+.section {
+  &__terms {
+    padding-top: 20px;
+    background-position-y: -300px;
+    background-position-x: 120%;
+    
+    @media screen and (max-width: 900px) {
+      background-position-y: -100px;
+    }
+  }
+}
+
