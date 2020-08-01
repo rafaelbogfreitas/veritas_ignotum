@@ -411,9 +411,11 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   height: 120vh;
-  background-image: url("../assets/header_bg.png");
+  background-image: url("../assets/people-triangles-bg.png"), radial-gradient(#92C3CD, #008e9b);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 60%, cover;
+  background-position-x: -100px, 0;
+  background-position-y: -100px, 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
