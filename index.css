@@ -414,8 +414,7 @@ textarea {
   background-image: url("../assets/people-triangles-bg.png"), radial-gradient(#92C3CD, #008e9b);
   background-repeat: no-repeat;
   background-size: 60%, cover;
-  background-position-x: -100px, 0;
-  background-position-y: -100px, 0;
+  background-position: -100px -100px, 0 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -464,6 +463,13 @@ textarea {
   background-size: 40%;
   background-position-x: 100%;
   padding-top: 35%;
+}
+
+@media screen and (max-width: 600px) {
+  .section__science {
+    padding-top: 2%;
+    position: inline-block;
+  }
 }
 
 .section__science--single {
@@ -523,6 +529,25 @@ textarea {
 .section .info__card-img {
   width: 28%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .section .info {
+    width: 100%;
+    position: static;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section .info__card-img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .info__card-img:last-child {
+    margin-bottom: 20px;
+  }
 }
 
 .section .science__btn {

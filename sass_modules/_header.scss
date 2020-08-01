@@ -7,8 +7,9 @@
     background-image: url("../assets/people-triangles-bg.png"), radial-gradient(#92C3CD, #008e9b);
     background-repeat: no-repeat;
     background-size: 60%, cover;
-    background-position-x: -100px, 0;
-    background-position-y: -100px, 0;
+    // background-position-x: -100px, 0;
+    // background-position-y: -100px, 0;
+    background-position: -100px -100px, 0 0;
     justify-content: flex-end;
 
     @media screen and (max-width: 1000px){
