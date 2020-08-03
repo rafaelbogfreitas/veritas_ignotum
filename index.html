@@ -118,7 +118,10 @@
       <h1 id="science" class="title title--light">SERVICES</h1>
       <div class="services__container">
         <img src="./assets/deception_card.png" alt="Deception detection image" class="services__img">
-        <div class="services__icon-container"><img src="./assets/plus_sign.svg" alt="plus sign svg" class="icons"><img src="./assets/triangle.svg" alt="upsidown triangle" class="icons"></div>
+        <div class="services__icon-container">
+          <img src="./assets/plus_sign.svg" alt="plus sign svg" class="icons icon--plus">
+          <img src="./assets/triangle.svg" alt="upsidown triangle" class="icons icon--triangle">
+        </div>
         <img src="./assets/behavioural_card.png" alt="behaviural" class="services__img">
       </div>
       <div class="btn__container">
@@ -149,10 +152,10 @@
       <h2 class="subtitle text--light">GET IN TOUCH WITH VERITAS IGNOTUM</h2>
       <p class="text text--light">You can send a message from the form bellow</p>
       <form class="contact__form" netlify>
-        <input name="name" placeholder="Name*" type="text" class="input" />
-        <input name="email" placeholder="Email*" type="email" class="input" />
-        <input name="number" placeholder="Number*" type="text" class="input" />
-        <textarea placeholder="Message" name="message"></textarea>
+        <input name="name" placeholder="Name*" type="text" class="input" required/>
+        <input name="email" placeholder="Email*" type="email" class="input" required/>
+        <input name="number" placeholder="Number*" type="text" class="input" required/>
+        <textarea placeholder="Message" name="message" required></textarea>
         <a href="/terms&conditions.html" class="text text--url text--light">Terms & Conditions and GDPR Policy</a>
         <div class="btn__container">
           <button class="btn btn--dark" type="submit">SEND MESSAGE</button>

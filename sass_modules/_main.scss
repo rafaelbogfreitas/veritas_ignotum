@@ -9,6 +9,10 @@ html {
   @media screen and (max-width: 1000px){
     font-size: $main-font-size / 1.3;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: $main-font-size / 1.5;
+   }
 }
 
 a {
@@ -127,6 +131,10 @@ textarea {
   &--url {
     text-decoration: underline;
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    line-height: 25px;
   }
 }
 

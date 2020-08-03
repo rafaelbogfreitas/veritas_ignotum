@@ -18,10 +18,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+     }
   }
 
   &__img {
     width: 30%;
+    @media screen and (max-width: 600px) {
+      width: 90%;
+      // margin: 0 auto 20px;
+     }
   }
 
   &__icon-container {
@@ -52,6 +60,13 @@
       margin-bottom: 20px;
       padding-bottom: 20px;
     }
+
+    @media screen and (max-width: 600px) {
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      // margin: 0 auto 20px;
+     }
   }
 
   &__reference {
@@ -69,5 +84,20 @@
     float: right;
     width: 40%;
     margin: 3%;
+
+    @media screen and (max-width: 600px) {
+      width: 90%;
+      margin: 0 auto 20px;
+      float: none;
+     }
+
+  }
+}
+
+.icon {
+  &--triangle {
+    @media screen and (max-width: 800px) {
+      display: none;
+     }
   }
 }

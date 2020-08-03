@@ -7,6 +7,10 @@
     background-position-x: 100%;
     padding-top: 35%;
 
+    @media screen and (max-width: 600px) {
+      padding-top: 20px;
+    }
+
     &--single {
       padding-top: 50px;
       background-position-y: -300px;
@@ -84,6 +88,17 @@
     &__card-img {
       width: 28%;
       height: auto;
+      
+      @media screen and (max-width: 600px) {
+        width: 90%;
+        margin: 0 auto 20px;
+       }
+    }
+    
+    @media screen and (max-width: 600px) {
+         width: 100%;
+        position: static;
+        flex-direction: column;
     }
   
   }
