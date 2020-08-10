@@ -454,6 +454,16 @@ textarea {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 600px) {
+  .section__header {
+    height: 100vh;
+    background-image: radial-gradient(#92C3CD, #008e9b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
+}
+
 .section__header-image {
   width: 90%;
   height: auto;
