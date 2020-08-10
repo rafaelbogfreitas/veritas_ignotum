@@ -21,6 +21,7 @@
       padding: 0 3%;
       display: flex;
       justify-content: space-around;
+      opacity: 0;
 
       @media screen and (max-width: 600px){
         flex-wrap: wrap;
@@ -88,6 +89,7 @@
     &__card-img {
       width: 28%;
       height: auto;
+      opacity: 0;
       
       @media screen and (max-width: 600px) {
         width: 90%;

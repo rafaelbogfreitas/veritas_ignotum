@@ -524,6 +524,7 @@ textarea {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -568,6 +569,7 @@ textarea {
 .section .info__card-img {
   width: 28%;
   height: auto;
+  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
