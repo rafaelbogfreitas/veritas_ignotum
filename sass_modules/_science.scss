@@ -21,7 +21,6 @@
       padding: 0 3%;
       display: flex;
       justify-content: space-around;
-      opacity: 0;
 
       @media screen and (max-width: 600px){
         flex-wrap: wrap;
@@ -30,7 +29,7 @@
 
     &-item {
       width: 15%;
-
+      opacity: 0;
       @media screen and (max-width: 600px){
         width: 45%;
         margin-top: 20px;

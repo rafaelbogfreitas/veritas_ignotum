@@ -534,7 +534,6 @@ textarea {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -546,6 +545,7 @@ textarea {
 
 .section__science-item {
   width: 15%;
+  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -672,6 +672,7 @@ textarea {
 
 .services__img {
   width: 30%;
+  opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
