@@ -19,6 +19,9 @@ navbarItems.forEach(item => {
   }, false)
 });
 
-document.addEventListener("resize", () => {
-  navbar.classList.remove("open")
+window.addEventListener("resize", () => {
+  if(window.innerWidth > 800 && navbar.classList.contains("open")) {
+    console.log("heyyyyyyyy")
+    navbar.classList.remove("open")
+  }
 }, false);
