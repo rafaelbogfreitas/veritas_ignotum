@@ -1,0 +1,19 @@
+.footer_copyright {
+  padding:20px 0;
+  background: linear-gradient(black, lightgray);
+
+  p {
+    font-size: 2rem;
+    margin: 0 3%; 
+  }
+
+  a {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+  }
+
+  .btn__container {
+    padding: 20px
+  }
+}

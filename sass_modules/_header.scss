@@ -10,7 +10,7 @@
     background-position: -100px -100px, 0 0;
     justify-content: flex-end;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 1000px){
       height: 100vh;
       background-image: radial-gradient(#92C3CD, #008e9b);
       background-repeat: no-repeat;
@@ -32,7 +32,7 @@
       height: 100%;
       margin-right: 20px;
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 1000px) {
         width: 90%;
         // margin: 0 auto 20px;
        }

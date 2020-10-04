@@ -36,12 +36,14 @@
     <nav class="navbar">
       <img src="./assets/navbar_logo.svg" alt="vi logo" class="navbar__image">
       <ul class="navbar__list">
+        <img class="close__icon" src="./assets/close-24px.svg" alt="menu icon">
         <li class="navbar__list-items"><a href="#" class="navbar__links">HOME</a></li>
         <li class="navbar__list-items"><a href="#science" class="navbar__links">SCIENCE</a></li>
         <li class="navbar__list-items"><a href="#services" class="navbar__links">SERVICE</a></li>
         <li class="navbar__list-items"><a href="#about" class="navbar__links">ABOUT US</a></li>
         <li class="navbar__list-items"><a href="#contact" class="navbar__links">CONTACT</a></li>
       </ul>
+      <img class="menu__icon" src="./assets/menu-24px.svg" alt="menu icon">
     </nav>
     <section class="section section__header">
       <aside class="section__header-container">
@@ -157,14 +159,21 @@
         <input name="email" placeholder="Email *" type="email" class="input" required/>
         <input name="number" placeholder="Phone *" type="text" class="input" required/>
         <textarea placeholder="Message" name="message *" required></textarea>
-        <a href="/terms&conditions.html" class="text text--url text--light">Terms & Conditions and GDPR Policy</a>
         <div class="btn__container">
           <button class="btn btn--dark" type="submit">SEND MESSAGE</button>
         </div>
       </form>
     </section>
+    <section class="footer_copyright">
+      <p class="text text--light">© Veritas Ignotum Ltd 2020, all rights reserved</p>
+      <p class="text text--light">© Designed by Fernanda Dias</p>
+      <div class="btn__container">
+        <a href="/terms&conditions.html" class="btn btn--light" type="submit">PRIVACY POLICY</a>
+      </div>
+    </section>
   </main>
   <script src="./script.js"></script>
+  <script src="./menu.js"></script>
 </body>
 
 </html>

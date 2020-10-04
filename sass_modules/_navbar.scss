@@ -18,16 +18,18 @@
 
   &__list {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // height: 100%;
   }
 
-  @media screen and (max-width: 700px) {
+  .menu__icon, .close__icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 800px) {
       &__list {
         position: fixed;
         top: 0;
         left: 0;
+        padding-top: 50px;
         background: #fff;
         z-index: 20;
         height: 100vh;
@@ -35,6 +37,25 @@
         flex-direction: column;
         transform: translateX(-80vw);
         transition: transform 0.3s linear;
+      }
+
+      &__list-items {
+        margin: 20px 50px;
+      }
+
+      .navbar__links {
+        width: 100%;
+      }
+
+      .menu__icon, .close__icon {
+        display: block;
+        width: 30px;
+      }
+
+      .close__icon {
+        position: absolute;
+        top: 20px;
+        right: 50px;
       }
   }
   
@@ -58,4 +79,9 @@
       color: #005d57;
     }
   }
+}
+
+.open {
+  transform: translateX(0vw);
+  transition: transform 0.3s linear;
 }
