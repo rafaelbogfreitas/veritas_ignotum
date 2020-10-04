@@ -18,3 +18,7 @@ navbarItems.forEach(item => {
     }
   }, false)
 });
+
+document.addEventListener("resize", () => {
+  navbar.classList.remove("open")
+}, false);
