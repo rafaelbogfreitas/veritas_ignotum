@@ -1,6 +1,9 @@
 .section {
   &__about{
-    background:url("/assets/bg_triangles.svg")  no-repeat right top;
+    background:url("/assets/science_bg.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 25%;
     width: 100vw;
     height: auto;
     padding-top: 50px;

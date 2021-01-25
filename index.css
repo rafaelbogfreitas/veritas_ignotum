@@ -666,10 +666,10 @@ textarea {
 }
 
 .section__services {
-  background: url("/assets/bg_triangles.svg"), radial-gradient(#92C3CD, #008e9b);
+  background: url("/assets/science_bg.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 40%, cover;
-  background-position: 100% -15%, center;
+  background-position: 100% 25%, center;
   width: 100vw;
   height: auto;
   padding-top: 50px;
@@ -793,7 +793,10 @@ textarea {
 }
 
 .section__about {
-  background: url("/assets/bg_triangles.svg") no-repeat right top;
+  background: url("/assets/science_bg.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100% 25%;
   width: 100vw;
   height: auto;
   padding-top: 50px;
