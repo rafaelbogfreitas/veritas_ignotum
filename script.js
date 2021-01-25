@@ -6,32 +6,44 @@ let cardsBar = [...document.querySelectorAll(".section__science-item")];
 let leftImg = document.querySelector(".services__container img[alt*='Decep']");
 let rightImg = document.querySelector(".services__container img[alt*='behav']");
 
-console.log(leftImg)
-
 let options = {
   rootMargin: '0px',
   threshold: 0.5
 }
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      cards.forEach(card => card.classList.add("fadeInUp"))
-    }
-  })
-}, options);
+  // HELPERS
 
-cards.forEach(item => observer.observe(item));
+  const observeArray = (array, animationType) => {
+    array.forEach((item, i) => {
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            item.classList.add(animationType);
+          }
+        })
+      }, options);
+      observer.observe(item);
+    })
+  };
 
-const observer2 = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      cardsBar.forEach(card => card.classList.add("fadeInUp"));
-    }
-  })
-}, options);
+  const observeArrayWithTimeOut = (array, animationType, velocity = 1000) => {
+    array.forEach((item, i) => {
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              console.log(i)
+              item.classList.add(animationType);
+            }, i * velocity)
+          }
+        })
+      }, options);
+      observer.observe(item);
+    })
+  };
 
-cardsBar.forEach(item => observer2.observe(item));
+observeArray(cards, "fadeInUp");
+observeArrayWithTimeOut(cardsBar, "fadeInUp", 500);
 
 const leftObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -65,4 +77,4 @@ rightObserver.observe(rightImg);
     if (event.ctrlKey == true) {
       event.preventDefault();
     }
-  })
+  });

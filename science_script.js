@@ -8,7 +8,14 @@ let options = {
 const observer2 = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      cardsBar.forEach(card => card.classList.add("fadeInUp"));
+      cardsBar.forEach(card => {
+        for (let i = 0; i < entries.length; i++) {
+          setTimeout(() => {
+            card.classList.add("fadeInUp")
+            console.log(card)
+          }, i * 1000)
+        }
+      });
     }
   })
 }, options);
