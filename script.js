@@ -52,3 +52,17 @@ const rightObserver = new IntersectionObserver((entries, observer) => {
 }, options);
 
 rightObserver.observe(rightImg);
+
+// Prevent zoom
+
+  document.addEventListener("keydown", (event) => {
+    if ((event.ctrlKey || event.metaKey) && (event.key == 'Meta' || event.key == '-' || event.key == '=' || event.key == 'Control') ) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("mousewheel DOMMouseScroll", (event) => {
+    if (event.ctrlKey == true) {
+      event.preventDefault();
+    }
+  })
