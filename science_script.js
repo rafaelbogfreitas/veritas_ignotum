@@ -5,19 +5,20 @@ let options = {
   threshold: 0.5
 }
 
-const observer2 = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      cardsBar.forEach(card => {
-        for (let i = 0; i < entries.length; i++) {
+const observeArrayWithTimeOut = (array, animationType, velocity = 1000) => {
+  array.forEach((item, i) => {
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
           setTimeout(() => {
-            card.classList.add("fadeInUp")
-            console.log(card)
-          }, i * 1000)
+            console.log(i)
+            item.classList.add(animationType);
+          }, i * velocity)
         }
-      });
-    }
+      })
+    }, options);
+    observer.observe(item);
   })
-}, options);
+};
 
-cardsBar.forEach(item => observer2.observe(item));
+observeArrayWithTimeOut(cardsBar, "fadeInUp", 500);
